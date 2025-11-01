@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1>What can JavaScripts do?</h1>
+        <p id="demo">JavaScripts can change HTML content</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript!"''>
+            Click me!
+        </button>
+
+        <h1>Bài tập 1: Hiển thị kết quả sử dụng hàm alert()</h1>
+        <button type="button" onclick="showMessage();">Click Me!</button>
+
+        <h1>Bài tập 2: Hiển thị kết quả sử dụng thẻ HTML</h1>
+        <div id="messageDiv"></div>
+        <button type="button" onclick="showMessageDiv();">Click Me!</button>
+
+        <h1>Bài tập 3: Hiển thị kết quả sử dụng hàm console.log()</h1>
+        <button type="button" onclick="showMessageLog();">Click Me!</button>
+
+        <script src="/Bai4/bai4.js"></script>
+    </body>
+</html>
