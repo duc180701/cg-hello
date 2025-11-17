@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+select {
+    height: 24px;
+}
+
+.title_input {
+    text-align: center;
+    font-weight: 700;
+}
+
+#ammoutDiv, #fromDiv, #toDiv, #convertDiv {
+    width: 25%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_convert {
+    display: flex;
+}
+
+.button_convert {
+    height: 24px;
+    width: 72px;
+    background-color: rgba(0, 102, 255, 0.58);
+    border: 1px solid rgba(0, 149, 255, 0.58);
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+}
+
+.button_convert:hover {
+    background-color: rgba(0, 183, 255, 0.58);
+    border: 1px solid white;
+}
+
+.button_convert:active {
+    background-color: rgba(17, 0, 255, 0.58);
+    border: 1px solid white;
+}
