@@ -1,18 +1,15 @@
 package MD2.Bai6.BaiTap;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
-public class Point2D {
+public class Point {
     private float x = 0.0f;
     private float y = 0.0f;
 
-    public Point2D(float x, float y) {
-        this.x = x;
-        this.y = y;
+    public Point() {
     }
 
-    public Point2D() {
+    public Point(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
 
     public float getX() {
@@ -42,6 +39,6 @@ public class Point2D {
 
     @Override
     public String toString() {
-        return "x = " + this.x + ", y = " + this.y;
+        return "(" + this.x + ", " + y + ")";
     }
 }
