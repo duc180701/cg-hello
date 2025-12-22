@@ -1,36 +1,19 @@
-package MD2.Bai14.BaiTap.Bai1;
+package MD2.Bai14.BaiTap.Bai2;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter list size: ");
-        int size = sc.nextInt();
-        int[] list = new int[size];
-        System.out.println("Enter each element: ");
-        for (int i = 0; i < size; i++) {
-            list[i] = sc.nextInt();
-        }
-        System.out.println("-----------");
-        System.out.print("Init list: ");
-        printList(list);
+        int[] list = {4, 2, 6, 8, 3, 9, 1, 10, 7, 5};
         insertionSort(list);
         System.out.println("-----------");
-        System.out.print("List after insertion sort:");
+        System.out.print("List after insertion sort: ");
         printList(list);
     }
 
     public static void insertionSort(int[] list) {
         if (list.length > 1) {
             for (int i = 0; i < list.length; i++) {
-                System.out.println("-----------");
-                for (int k = 0; k < list.length; k++) {
-                    System.out.print(list[k] + " ");
-                    if (k == i) {
-                        System.out.print(" | ");
-                    }
-                }
                 for (int j = 0; j < i; j++) {
                     if (list[i] < list[j]) {
                         int temp = list[i];
@@ -41,13 +24,11 @@ public class Main {
                         break;
                     }
                 }
-                printList(list);
             }
         }
     }
 
     public static void printList(int[] list) {
-        System.out.println();
         for (int i = 0; i < list.length; i++) {
             System.out.print(list[i] + " ");
         }
